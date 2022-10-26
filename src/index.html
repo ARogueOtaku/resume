@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./styles/tailwind.output.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amit Das Resume</title>
+  </head>
+  <body class="m-0 p-0 bg-slate-100">
+    <script src="./scripts/swipeEvent.js"></script>
+    <script src="./scripts/script.js" defer></script>
+    <div id="root" class="relative flex w-full max-w-7xl m-auto">
+      <div
+        id="banner"
+        class="md:w-1/2 lg:w-2/3 min-w-max text-center absolute mt-24 md:my-14 px-10 py-14 left-1/2 -translate-x-1/2 border-2 border-slate-800 z-10 flex flex-col gap-6 bg-slate-100 text-slate-800"
+      >
+        <h1 class="text-3xl md:text-4xl lg:text-5xl uppercase font-bold tracking-widest">Amit Das</h1>
+        <h1 class="text-base md:text-lg lg:text-xl uppercase font-normal">Frontend Developer</h1>
+      </div>
+      <div id="togglemenu" class="absolute top-0 left-0 z-10 m-5 md:hidden close">
+        <div class="w-6 h-1 rounded-md my-1 transition-colors"></div>
+        <div class="w-6 h-1 rounded-md my-1 transition-colors"></div>
+        <div class="w-6 h-1 rounded-md my-1 transition-colors"></div>
+      </div>
+      <a
+        id="download"
+        title="Download"
+        href="https://drive.google.com/uc?export=download&id=1-Nf8gpP5bc6qWPiWgYY4vIpNguQ4Uj7i"
+        class="fixed top-0 right-0 bg-slate-800 text-slate-100 my-3 md:my-0 py-1 px-3 md:py-2 md:px-4 grid place-items-center text-2xl md:text-4xl cursor-pointer hover:scale-x-110"
+        >&downarrow;</a
+      >
+      <div
+        id="sidebar"
+        class="absolute min-max-height -left-80 md:left-0 top-0 md:relative w-80 md:w-1/3 bg-slate-800 text-slate-100 overflow-hidden transition-all"
+      >
+        <div class="mt-90 ml-10 lg:ml-12 mr-6">
+          <div id="details" class="flex flex-col my-10 break-all">
+            <span class="uppercase tracking-widerest font-bold">Details</span>
+            <hr class="w-full my-1 border-slate-100" />
+            <div id="address" class="flex flex-col mt-4">
+              <span class="uppercase font-bold text-xs mb-1">Address</span>
+              <span class="text-xs">Kolkata</span>
+              <span class="text-xs">India</span>
+            </div>
+            <div id="phone" class="flex flex-col mt-4">
+              <span class="uppercase font-bold text-xs mb-1">Phone</span>
+              <span class="text-xs">+917980110095</span>
+            </div>
+            <div id="email" class="flex flex-col mt-4">
+              <span class="uppercase font-bold text-xs mb-1">Email</span>
+              <span class="text-xs">amit.rockinad.das@gmail.com</span>
+            </div>
+          </div>
+          <div id="links" class="flex flex-col my-10 break-all">
+            <span class="uppercase tracking-widerest font-bold">Links</span>
+            <hr class="w-full my-1 border-slate-100" />
+            <div class="flex flex-col mt-4 gap-2">
+              <a
+                href="https://github.com/arogueotaku"
+                target="_blank"
+                class="text-xs mb-1 underline hover:text-slate-50"
+                >GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/arogueotaku"
+                target="_blank"
+                class="text-xs mb-1 underline hover:text-slate-50"
+                >LinkedIn</a
+              >
+              <a
+                href="https://www.instagram.com/dayz_1995"
+                target="_blank"
+                class="text-xs mb-1 underline hover:text-slate-50"
+                >Instagram</a
+              >
+            </div>
+          </div>
+          <div id="skills" class="flex flex-col my-10 break-all">
+            <span class="uppercase tracking-widerest font-bold">Skills</span>
+            <hr class="w-full my-1 border-slate-100" />
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">JavaScript</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">React</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">CSS</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">HTML5</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">NodeJS</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">Git</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">SQL</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">Java</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+              </div>
+            </div>
+          </div>
+          <div id="languages" class="flex flex-col my-10 break-all">
+            <span class="uppercase tracking-widerest font-bold">Languages</span>
+            <hr class="w-full my-1 border-slate-100" />
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">English</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">Hindi</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100"></div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-4 gap-1">
+              <span class="text-xs mb-1">Bengali</span>
+              <div class="text-xs flex gap-2">
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+                <div class="w-2 h-2 rounded-full border border-slate-100 bg-slate-100"></div>
+              </div>
+            </div>
+          </div>
+          <div id="hobbies" class="flex flex-col my-10">
+            <span class="uppercase tracking-widerest font-bold">Hobbies</span>
+            <hr class="w-full my-1 border-slate-100" />
+            <div class="mt-4 text-sm"><span>Gaming</span>, <span>Coding</span>, <span>Cycling</span></div>
+          </div>
+        </div>
+      </div>
+      <div id="content" class="min-h-screen w-full md:w-2/3 bg-slate-100 text-slate-800">
+        <div class="mt-90 mx-8">
+          <div id="profile" class="my-10">
+            <span class="uppercase tracking-widerest font-bold">Profile</span>
+            <hr class="w-full my-1 border-slate-800" />
+            <div class="text-sm md:text-base mt-4">
+              Front End Developer with <em>5 Years</em> of experience working with <em>JavaScript</em>,
+              <em>HTML/CSS</em> and <em>React</em> to deliver exceptional customer experiences. Able to effectively
+              self-manage during independent projects, as well as collaborate in a team setting.
+            </div>
+          </div>
+          <div id="employment" class="my-10">
+            <span class="uppercase tracking-widerest font-bold">Employment</span>
+            <hr class="w-full my-1 border-slate-800" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">Systems Engineer, Infosys Limited</span>
+                  <span>Oct 2017 - Jun 2019</span>
+                </div>
+                <span class="leading-6 md:leading-7 text-xs md:text-sm text-right">Bengaluru</span>
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span
+                  >Effectively resolved Data Inconsistencies and cleaned corrupt data from Citi Genesis Data Warehouse
+                  as part of the Data Investigation(DI) Team.</span
+                >
+                <span>CITI Genesis was CITI Banks Data Warehousing Project.</span>
+                <span>Technology Used: SQL Server, Microsoft Excel, JavaScript.</span>
+                <span>Client: CITI Bank.</span>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">Solutions Engineer, LabVantage Solutions</span>
+                  <span>Jun 2019 - Nov 2021</span>
+                </div>
+                <span class="leading-6 md:leading-7 text-xs md:text-sm text-right">Kolkata</span>
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>Designed and Developed numerous reports of Lab Experimentation Data using Jasper.</span>
+                <span>Designed and Developed bar-code labels for multiple clients using BarTender.</span>
+                <span>Created Multiple Java/JavaScript micro frameworks.</span>
+                <span
+                  >Worked on Multiple Projects simultaneously and handled multiple client calls. Collaborated with a
+                  team of Talented Engineers to meet Customers Requirements.</span
+                >
+                <span>Created Multiple Java/JavaScript micro frameworks.</span>
+                <span>Technologies Used: HTML, CSS, JavaScript, React, Git, SQL, LIMS.</span>
+                <span>Clients: Abbott, Streck, Baxter, Cedars Sinai, Capstone, Gritstone, Novavax.</span>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">Senior Software Engineer, Accolite Digital</span>
+                  <span>Nov 2019 - Present</span>
+                </div>
+                <span class="leading-6 md:leading-7 text-xs md:text-sm text-right">Bengaluru (Remote)</span>
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span
+                  >Effectively resolved Data Inconsistencies and cleaned corrupt data from Citi Genesis Data Warehouse
+                  as part of the Data Investigation(DI) Team.</span
+                >
+                <span
+                  >Built multiple UI modules as Contractor for ThoughtWorks as a part of the Wealth Team for SCNextGen
+                  Project.</span
+                >
+                <span
+                  >SCNextGen (SCNG) was a complete overhaul of the Online Banking System for Standard Chartered Bank.
+                  Worked with a team of diverse, multinational and talented individuals to integrate my modules and test
+                  the same.</span
+                >
+                <span>Followed a strictly Test Driven Development Practice to ensure high quality reusable code.</span>
+                <span>Technologies Used: HTML/CSS, React, TailwindCSS, GraphQL, NodeJS, Git, React Testing.</span>
+                <span>Clients: ThoughtWorks (Contractor), Standard Chartered Bank.</span>
+              </div>
+            </div>
+          </div>
+          <div id="education" class="my-10 break-after-always">
+            <span class="uppercase tracking-widerest font-bold">Education</span>
+            <hr class="w-full my-1 border-slate-800" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg"
+                    >Bachelor of Technology, University of Engineering & Management</span
+                  >
+                  <span>2013 - 2017</span>
+                </div>
+                <span class="leading-6 md:leading-7 text-xs md:text-sm text-right">Jaipur</span>
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>Graduated as a Computer Science Engineer with a CGPA of 7.11. </span>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">Higher Secondary, St. Xavier's Institution</span>
+                  <span>2011 - 2013</span>
+                </div>
+                <span class="leading-6 md:leading-7 text-xs md:text-sm text-right">Kolkata</span>
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>Passed in Science from ISC Board with 73.2%.</span>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">Secondary, St. Xavier's Institution</span>
+                  <span>2009 - 2011</span>
+                </div>
+                <span class="leading-6 md:leading-7 text-xs md:text-sm text-right">Kolkata</span>
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>Passed from ICSE Board with 94.3%.</span>
+              </div>
+            </div>
+          </div>
+          <div id="projects" class="my-10">
+            <span class="uppercase tracking-widerest font-bold">Projects</span>
+            <hr class="w-full my-1 border-slate-800" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">Wordle</span>
+                  <span>Typescript, React, HTML, CSS</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/wordle"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>A minimal Clone of the famous Wordle game.</span>
+                <a class="underline" href="https://arogueotaku.github.io/wordle" target="_blank">Live App</a>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">Authentication</span>
+                  <span>Java, Spring Boot, Rest, JWT</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/authentication"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>Spring Boot Authentication API.</span>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">GRPC/Rest</span>
+                  <span>JavaScript, NodeJS, GRPC, Google Protobuf, JSON</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/grpc-rest-api"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>A Simple API written in both gRPC and Rest.</span>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">WCreate</span>
+                  <span>Typescript, NodeJS</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/wcreate"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>A Node CLI Utility to create Vanilla Webpage.</span>
+                <a class="underline" href="https://www.npmjs.com/package/wcreate" target="_blank">NPM Package</a>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">RoomWS</span>
+                  <span>JavaScript, NodeJS, WebSockets</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/RoomWS"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span
+                  >A Simple Chat App that uses basic WebSocket Server to implement a Lobby like Feature and Allow
+                  chatting.</span
+                >
+                <span
+                  >This is a POC Project I did to see if I could emulate a Room without using any Third Party Websocket
+                  Libraries. Although I was successful in what I set out to do, it involved a lot of boilerplating and
+                  hassle just to set up rooms and keep track of them.</span
+                >
+                <span>Please use dedicated libraries like Socket.IO if you wish to emulate rooms via WebSockets.</span>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">Simple Stats</span>
+                  <span>Java, Minecraft 1.18 API</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/SimpleStats"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span
+                  >A Simple Stats Mod which show useful Statistics like Player Coordinates, Food Levels, FPS and
+                  Latency.</span
+                >
+                <a class="underline" href="https://www.curseforge.com/minecraft/mc-mods/simple-stats" target="_blank"
+                  >Download</a
+                >
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">YTAudioStream</span>
+                  <span>NodeJS, Express</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/YTAudioStream"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>A Web Server that Responds with YouTube Audio Readable Streams.</span>
+                <a class="underline" href="https://yd-loader.glitch.me/audio?v=dQw4w9WgXcQ" target="_blank"
+                  >Demo (Has a Cold Start)</a
+                >
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">BeforeAfter</span>
+                  <span>HTML, CSS, JavaScript</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/BeforeAfter"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>A Before After Image Slider Utility.</span>
+                <a class="underline" href="https://arogueotaku.github.io/BeforeAfter" target="_blank">Demo</a>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">CardPerspective</span>
+                  <span>HTML, CSS, JavaScript</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/CardPerspective"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>A Vanilla JS tilt Effect POC. No Libraries Used.</span>
+                <span
+                  >This is just for POC. For a more Production Ready Tilt Effect please check out this Awesome Library
+                  by Gijs Rogé called tilt.js.</span
+                >
+                <a class="underline" href="https://arogueotaku.github.io/BeforeAfter" target="_blank">Demo</a>
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">TimeKeeper</span>
+                  <span>HTML, CSS, JavaScript</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/TimeKeeper"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>A Chromium based Extensions to add clocks to Your Browser.</span>
+                <a
+                  class="underline"
+                  href="https://chrome.google.com/webstore/detail/timekeeper/kmcglconamolngmdcmmklkipkplfjhim"
+                  target="_blank"
+                  >Download</a
+                >
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">ExtensionTunes</span>
+                  <span>HTML, CSS, JavaScript</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/ExtensionTunes"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>An Audio Player Chrome Extension.</span>
+                <a
+                  class="underline"
+                  href="https://chrome.google.com/webstore/detail/extensiontunes/nhocfnegiaknbpdpfphdffcppbhodpfc"
+                  target="_blank"
+                  >Download</a
+                >
+              </div>
+            </div>
+            <hr class="w-full md:w-1/2 border-slate-500 border-dashed" />
+            <div class="text-sm md:text-base my-4" lang="en">
+              <div class="flex items-center md:items-start gap-2">
+                <div class="flex flex-col grow">
+                  <span class="font-bold text-base md:text-lg">AlfaBot</span>
+                  <span>JavaScript, Discord API</span>
+                </div>
+                <a
+                  href="https://github.com/ARogueOtaku/AlfaBot"
+                  target="_blank"
+                  class="leading-6 md:leading-7 text-xs md:text-sm text-right underline"
+                  >Source</a
+                >
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <span>Nifty Discord Buddy who provides Steam Game Details via commands.</span>
+                <span
+                  >Due to recent changes to Heroku free plan, this bot is now dead. It might come alive in future when I
+                  port it to serverless architecture</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
