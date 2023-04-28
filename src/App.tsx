@@ -33,7 +33,7 @@ function App() {
   return loading ? (
     <Spinner size={60} />
   ) : (
-    <div id="container">
+    <div id="container" className="w-full">
       <div
         className="relative m-auto flex min-h-screen w-full max-w-7xl"
         {...swipeHandlers}
