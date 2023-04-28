@@ -14,9 +14,12 @@ import EducationSection from "@/components/logical/EducationSection";
 import ProjectsSection from "@/components/logical/ProjectsSection";
 import ToggleButton from "@/components/logical/ToggleButton";
 import Download from "@/components/logical/Download";
+import Spinner from "@/components/visual/Spinner";
+import useProfileDataLoading from "@/hooks/useProfileDataLoading";
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
+  const loading = useProfileDataLoading();
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => {
@@ -27,27 +30,31 @@ function App() {
     },
   });
 
-  return (
-    <div
-      className="relative m-auto flex min-h-screen w-full max-w-7xl"
-      {...swipeHandlers}
-    >
-      <Banner />
-      <ToggleButton toggler={setShowSidebar} toggleState={showSidebar} />
-      <Download />
-      <SideBar expanded={showSidebar}>
-        <DetailsSection />
-        <LinksSection />
-        <SkillsSection />
-        <LanguagesSection />
-        <HobbiesSection />
-      </SideBar>
-      <Content>
-        <ProfileSection />
-        <EmploymentSection />
-        <EducationSection />
-        <ProjectsSection />
-      </Content>
+  return loading ? (
+    <Spinner size={60} />
+  ) : (
+    <div id="container">
+      <div
+        className="relative m-auto flex min-h-screen w-full max-w-7xl"
+        {...swipeHandlers}
+      >
+        <Banner />
+        <ToggleButton toggler={setShowSidebar} toggleState={showSidebar} />
+        <Download />
+        <SideBar expanded={showSidebar}>
+          <DetailsSection />
+          <LinksSection />
+          <SkillsSection />
+          <LanguagesSection />
+          <HobbiesSection />
+        </SideBar>
+        <Content>
+          <ProfileSection />
+          <EmploymentSection />
+          <EducationSection />
+          <ProjectsSection />
+        </Content>
+      </div>
     </div>
   );
 }

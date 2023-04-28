@@ -12,7 +12,7 @@
 }
 
 @media (min-width: 1024px) {
-  body {
+  #container {
     background: linear-gradient(
       90deg,
       rgb(30 41 59) 39.2%,
