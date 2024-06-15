@@ -1,4 +1,5 @@
-import { ProfileSchema, TProfile } from "@/schemas/profile";
+import profile from "@/data/profile";
+import { Profile } from "@/data/types";
 import {
   ReactNode,
   createContext,
@@ -8,7 +9,7 @@ import {
   useState,
 } from "react";
 
-const emptyProfile = ProfileSchema.parse({
+const emptyProfile: Profile = {
   address: [],
   basicInfo: {
     aboutMe: "",
@@ -27,11 +28,11 @@ const emptyProfile = ProfileSchema.parse({
   skills: [],
   socials: [],
   projects: [],
-});
+};
 
 type TProfileDataContextValue = {
   loading: boolean;
-  profileData: TProfile;
+  profileData: Profile;
 };
 
 const initialContextValue: TProfileDataContextValue = {
@@ -49,9 +50,7 @@ function ProfileDataProvider({ children }: { children: ReactNode }) {
   const load = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch("./profileData.json");
-      const data = ProfileSchema.parse(await response.json());
-      setProfileData(data);
+      setProfileData(profile);
     } catch (err) {
       setProfileData(emptyProfile);
       console.log(err);

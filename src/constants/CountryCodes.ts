@@ -1,4 +1,6 @@
-export default {
+import { Country, CountryCode } from "@/data/types";
+
+const CountryCodes: Record<Country, CountryCode> = {
   "N/A": {
     dial_code: "",
     code: "",
@@ -183,7 +185,7 @@ export default {
     dial_code: "+61",
     code: "CX",
   },
-  "Cocos (Keeling) Islands": {
+  "Cocos (Keeling Islands)": {
     dial_code: "+61",
     code: "CC",
   },
@@ -972,3 +974,5 @@ export default {
     code: "ZW",
   },
 } as const;
+
+export default CountryCodes;
