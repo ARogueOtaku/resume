@@ -7,7 +7,7 @@ import ExperienceArticle, {
 
 function EmploymentSection() {
   const employments = useProfileDataSelector(
-    (profileData) => profileData.experience
+    (profileData) => profileData.experiences
   );
 
   const employmentArticleDatas = useMemo<IExperienceArticleProps[]>(() => {
@@ -21,7 +21,9 @@ function EmploymentSection() {
       }
       points.push(`Clients: ${employment.clients.join(", ")}`);
       return {
-        headerText: `${employment.position}, ${employment.employer}`,
+        headerText: `${employment.position}, ${employment.employer}${
+          employment.contractor ? " (Contractor)" : ""
+        }`,
         duration: {
           start: employment.start,
           end: employment.end,

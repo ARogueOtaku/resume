@@ -1,6 +1,5 @@
 import DateRange from "@/components/visual/DateRange";
 import Article from ".";
-import Link from "../Link";
 
 export interface IExperienceArticleProps {
   headerText: string;

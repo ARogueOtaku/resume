@@ -1,5 +1,5 @@
-import profile from "@/data/profile";
 import { Profile } from "@/data/types";
+import profile from "@/data/profile";
 import {
   ReactNode,
   createContext,
@@ -10,20 +10,20 @@ import {
 } from "react";
 
 const emptyProfile: Profile = {
-  address: [],
+  addresses: [],
   basicInfo: {
     aboutMe: "",
     job: "",
     name: "",
   },
-  education: [],
+  educations: [],
   email: "",
-  experience: [],
+  experiences: [],
   hobbies: [],
   languages: [],
   phone: {
     country: "N/A",
-    number: -1,
+    number: 0,
   },
   skills: [],
   socials: [],
