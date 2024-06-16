@@ -12,7 +12,7 @@ const skills: Skill[] = [
   {
     name: "React",
     rating: {
-      rating: 4,
+      rating: 4.5,
       maxRating: 5,
       ratingType: "NUMBER",
     },
@@ -28,7 +28,7 @@ const skills: Skill[] = [
   {
     name: "TypeScript",
     rating: {
-      rating: 3.5,
+      rating: 4,
       maxRating: 5,
       ratingType: "NUMBER",
     },
@@ -52,7 +52,7 @@ const skills: Skill[] = [
   {
     name: "Git",
     rating: {
-      rating: 3,
+      rating: 4,
       maxRating: 5,
       ratingType: "NUMBER",
     },
@@ -68,7 +68,7 @@ const skills: Skill[] = [
   {
     name: "Java",
     rating: {
-      rating: 2,
+      rating: 3,
       maxRating: 5,
       ratingType: "NUMBER",
     },

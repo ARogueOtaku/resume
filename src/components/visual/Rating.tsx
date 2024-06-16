@@ -1,5 +1,16 @@
 import { useMemo } from "react";
 
+const getRatingClass = (current: number, max: number) => {
+  switch (true) {
+    case current + 1 <= max:
+      return "bg-slate-100";
+    case current < max && current + 1 > max:
+      return "bg-gradient-to-r from-slate-100 from-50% to-transparent to-0%";
+    default:
+      return "";
+  }
+};
+
 function Rating({
   header,
   rating,
@@ -15,9 +26,10 @@ function Rating({
       const component = (
         <div
           key={i}
-          className={`h-2 w-2 rounded-full border border-slate-100 ${
-            i < rating ? "bg-slate-100" : ""
-          }`}
+          className={`h-2 w-2 rounded-full border border-slate-100 ${getRatingClass(
+            i,
+            rating
+          )}`}
         ></div>
       );
       out.push(component);
