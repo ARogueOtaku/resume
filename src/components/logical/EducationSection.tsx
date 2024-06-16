@@ -7,7 +7,7 @@ import ExperienceArticle, {
 
 function EducationSection() {
   const educations = useProfileDataSelector(
-    (profileData) => profileData.education
+    (profileData) => profileData.educations
   );
 
   const educationArticleDatas = useMemo<IExperienceArticleProps[]>(() => {

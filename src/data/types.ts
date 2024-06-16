@@ -72,15 +72,15 @@ export type Project = {
 };
 export type Profile = {
   basicInfo: BasicInfo;
-  address: Address[];
+  addresses: Address[];
   phone: Phone;
   email: Email;
   socials: Link[];
   skills: Skill[];
   hobbies: Hobby[];
   languages: Language[];
-  experience: WorkExperience[];
-  education: Education[];
+  experiences: WorkExperience[];
+  educations: Education[];
   projects: Project[];
 };
 

@@ -5,7 +5,9 @@ import { useMemo } from "react";
 import Detail from "@/components/visual/Detail";
 
 function DetailsSection() {
-  const address = useProfileDataSelector((profileData) => profileData.address);
+  const address = useProfileDataSelector(
+    (profileData) => profileData.addresses
+  );
   const email = useProfileDataSelector((profileData) => profileData.email);
   const phone = useProfileDataSelector((profileData) => profileData.phone);
 
@@ -15,7 +17,10 @@ function DetailsSection() {
   );
   const emailText = useMemo<string[]>(() => [email], [email]);
   const phoneText = useMemo<string[]>(
-    () => [`${COUNTRY_CODES[phone.country].dial_code}${phone.number}`],
+    () =>
+      phone.number < 1
+        ? []
+        : [`${COUNTRY_CODES[phone.country].dial_code}${phone.number}`],
     [phone]
   );
 
